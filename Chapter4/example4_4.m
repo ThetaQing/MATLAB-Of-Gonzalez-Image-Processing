@@ -1,3 +1,5 @@
+% example 4.4 Page 94
+% 观察GLPF 的频谱和输出图像
 f = imread('6.png');
 f = rgb2gray(f);
 

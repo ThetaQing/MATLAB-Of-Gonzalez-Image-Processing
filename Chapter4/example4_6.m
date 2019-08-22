@@ -1,11 +1,16 @@
+% example 4.6 
+% mesh 函数的测试和GHPF滤波的输出图像
+
+% mesh函数测试，适用于surf函数
 H = fftshift(hpfilter('gaussian', 500, 500, 50));
-figure('name', 'btw'), mesh(H(1 : 10:500, 1:10:500));
+figure('name', 'gaussian'), mesh(H(1 : 10:500, 1:10:500));
 axis([0 50 0 50 0 1])
 colormap([0 0 0])
 axis off
 grid off
-figure('name', 'image of btw'), imshow(H, [])
+figure('name', 'image of gaussian'), imshow(H, [])
 
+% GHPF滤波
 f = imread('6.png');
 f = rgb2gray(f);
 PQ = paddedsize(size(f));

@@ -1,4 +1,5 @@
-% Àý 4.5
+% example 4.5. Page 97
+% test mesh¡¢surf¡¢meshgrid function
 clear, clc
 % GLPF
 H = fftshift(lpfilter('gaussian', 500, 500, 50));
